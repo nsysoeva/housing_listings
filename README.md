@@ -66,11 +66,15 @@ Later in our analysis, we have revealed that our dependent variable (Price) has 
 
 We have then dropped a few features that industry knowledge would suggest to be non-meaninful or that were duplicative of other features. Next steps included creating dummy variables, converting boolean to numerical values, and creating CountVectorizer to process text data from the Description column. For CountVectorizer, we have capped the maximum features at 100 and dropped tokens used <10 times from the vocabulary.
 
-### Baseline models and Evaluation Metrics
+### Baseline Models and Evaluation Metrics
+
+We run two models - linear regression and decision tree regressor. For linear regression, we first went through the steps of removing features when there was correlation >50% between features (that was an iterative process) - we ended up with 124 independent features. Afterwards, we checked for multicollinearity using Variance Inflation Factor (VIF) - there was no multicollinearity identified. We ran the linear regression on the dataset before removing outliers, which resulted in 33% train score and 41% test score. We have subsequenly ran a regression on the data after removing outliers, which resulted in 32% test score and 41% train score.
+
+Subsequently, we ran a decision tree regressor before and after removing outliers on 124 independent features. Best result of 55% train score and 52% test score is achieved in the model before removing outliers. The model after removing outliers gives us 35% - both train and test scores. 
+
+Overall, I would expect a higher accuracy score from the model, perhaps closer to 80%. It appears that we have a plenty of relevant independent variables accessible to us. The only model anywher remotely close to my projection is decision tree regressor on 124 independent variables (before removing outliers, so on all 15,171 rows of the data). 
+
+### Next Steps
 
 
-
-
-- Baseline models and evaluation metrics
-- Next steps for advanced modeling and productizing your work
 
