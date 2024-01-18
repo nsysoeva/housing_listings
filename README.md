@@ -72,9 +72,11 @@ We run two models - linear regression and decision tree regressor. For linear re
 
 Subsequently, we ran a decision tree regressor before and after removing outliers on 124 independent features. Best result of 55% train score and 52% test score is achieved in the model before removing outliers. The model after removing outliers gives us 35% - both train and test scores. 
 
-Overall, I would expect a higher accuracy score from the model, perhaps closer to 80%. It appears that we have a plenty of relevant independent variables accessible to us. The only model anywher remotely close to my projection is decision tree regressor on 124 independent variables (before removing outliers, so on all 15,171 rows of the data). 
+We have identified that 4 is the most appropriate maximum depth hyperparameter for the decision tree regressor in both situations (before and after removing outliers).
+
+Overall, I would expect a higher accuracy score from the model, perhaps closer to 70-80%. It appears that we have a plenty of relevant independent variables accessible to us. The only model anywher remotely close to my projection is decision tree regressor on 124 independent variables (before removing outliers, so on all 15,171 rows of the data). 
 
 ### Next Steps
 
-
+As the next step, we will explore other available regressor models (possibly Neural networks and KNN regressor) in an attempt to identify one with a higher accuracy score. For those other regressor models we will look to optimize hyperparameters where relevant.
 
