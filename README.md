@@ -4,7 +4,7 @@
 
 For this project, we are going to look at the U.S. housing market and, more specifically, at the housing market in Austin, Texas. While our data is location specific, the idea is that the data preparation and modeling procedures developed as part of this project can be replicated to apply to any geography. Predicting housing prices would allow both sellers and buyers to define the appropriate house price in order to do a transaction on the market. Price predictor may also allow governments and other related agencies to make housing price predictions to assess the current state of the housing market.
 
-### Dataset and Preprocessing
+### Dataset Overview
 
 The dataset was obtained from Kaggle: https://www.kaggle.com/datasets/ericpierce/austinhousingprices/data. It contains 2.52 GB of data, however, most of that space is occupied with photos of the houses. The CSV file contains 11.86 MB of data. There are 47 features (including our dependent feature - latest price. The database has 15,171 rows. The features are as follows:
 
@@ -56,12 +56,21 @@ The dataset was obtained from Kaggle: https://www.kaggle.com/datasets/ericpierce
 - numOfStories: The number of stories a property has
 - homeImage: The name of the first image from the home listing. This image file can be found in the included homeImages folder
 
+The housing listings are obtained from Zillow and are scraped as of January 2021.
+
+### Preprocessing and EDA
+
+As the next step, we investigated the data further. It contained no duplicates and only a few missing falues in the description column. Because the missing values were very few (2), we have removed the rows that contained them. Further, we have looked at the geographic map of housing properties and identified that the properties generally cluster by price, with those <$309k (1st quartile of the distribution) located on the east side of the city, those between $309k and $405k (where $405k is the median value) spread in the middle of the city, from north to south, and those >$405k located in the central and western edge of the city.  
+
+Later in our analysis, we have revealed that our dependent variable (Price) has outliers going up to $13.5M. We have then chose to eliminate the outliers and run some of the regression models on data which excludes rows where housing prices are >$500k. 
+
+We have then dropped a few features that industry knowledge would suggest to be non-meaninful or that were duplicative of other features. Next steps included creating dummy variables, converting boolean to numerical values, and creating CountVectorizer to process text data from the Description column. For CountVectorizer, we have capped the maximum features at 100 and dropped tokens used <10 times from the vocabulary.
+
+### Baseline models and Evaluation Metrics
 
 
 
-- A non-technical overview of the problem statement, your proposed solution, and an estimate of the potential impact of your solution.
-- An overview of the dataset and preprocessing procedures
-- A few important findings from EDA
+
 - Baseline models and evaluation metrics
 - Next steps for advanced modeling and productizing your work
 
