@@ -60,7 +60,7 @@ The housing listings are obtained from Zillow and are scraped as of January 2021
 
 ### Preprocessing and EDA
 
-As the next step, we investigated the data further. It contained no duplicates and only a few missing falues in the description column. Because the missing values were very few (2), we have removed the rows that contained them. Further, we have looked at the geographic map of housing properties and identified that the properties generally cluster by price, with those <$309k (1st quartile of the distribution) located on the east side of the city, those between $309k and $405k (where $405k is the median value) spread in the middle of the city, from north to south, and those >$405k located in the central and western edge of the city.  
+As the next step, we investigated the data further. It contained no duplicates and only a few missing values in the description column. Because the missing values were very few (2), we have removed the rows that contained them. Further, we have looked at the geographic map of housing properties and identified that the properties generally cluster by price, with those <$309k (1st quartile of the distribution) located on the east side of the city, those between $309k and $405k (where $405k is the median value) spread in the middle of the city, from north to south, and those >$405k located in the central and western edge of the city.  
 
 Later in our analysis, we have revealed that our dependent variable (Price) has outliers going up to $13.5M. We have then chose to eliminate the outliers and run some of the regression models on data which excludes rows where housing prices are >$500k. 
 
@@ -74,7 +74,7 @@ Subsequently, we ran a decision tree regressor before and after removing outlier
 
 We have identified that 4 is the most appropriate maximum depth hyperparameter for the decision tree regressor in both situations (before and after removing outliers).
 
-Overall, I would expect a higher accuracy score from the model, perhaps closer to 70-80%. It appears that we have a plenty of relevant independent variables accessible to us. The only model anywher remotely close to my projection is decision tree regressor on 124 independent variables (before removing outliers, so on all 15,171 rows of the data). 
+Overall, I would expect a higher accuracy score from the model, perhaps closer to 70-80%. It appears that we have a plenty of relevant independent variables accessible to us. The only model anywhere remotely close to my projection is decision tree regressor on 124 independent variables (before removing outliers, so on all 15,171 rows of the data). 
 
 ### Next Steps
 
