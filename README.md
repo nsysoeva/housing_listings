@@ -66,6 +66,9 @@ Later in our analysis, we have revealed that our dependent variable (Price) has 
 
 We have then dropped a few features that industry knowledge would suggest to be non-meaninful or that were duplicative of other features. Next steps included creating dummy variables, converting boolean to numerical values.
 
+Our EDA has also revealed a few patters, some of which are summarized below:
+![EDA](https://github.com/nsysoeva/housing_listings/assets/152663360/f9c283f0-558d-4262-8616-518f386762a8)
+
 ### Baseline Models and Evaluation Metrics
 
 We run three models - linear regression, decision tree regressor, and KNN regressor. For linear regression, we first went through the steps of removing features when there was correlation >50% between features (that was an iterative process). Afterwards, we checked for multicollinearity using Variance Inflation Factor (VIF) and removed variables with VIF >5. We ended up with 10 independent variables suitables for regression analysis (not a large number). We ran the linear regression on the dataset before removing outliers, which resulted in -43% test score. We subsequenly ran a regression on the data after removing outliers, which resulted in 15% test score.
