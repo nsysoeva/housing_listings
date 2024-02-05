@@ -1,0 +1,55 @@
+,Importance,
+Feature 35: 0.15368779380194872,1,numOfBathrooms
+Feature 26: 0.09939396691722639,2,livingAreaSqFt
+Feature 31: 0.03706397365114857,3,avgSchoolDistance
+Feature 5: 0.033470422847171236,4,hasAssociation
+Feature 2: 0.026718848903635906,5,longitude
+Feature 3: 0.026390297992353005,6,propertyTaxRate
+Feature 1: 0.025374176453732335,7,latitude
+Feature 9: 0.019534238738189214,8,hasSpa
+Feature 12: 0.01928107577566852,9,yearBuilt
+Feature 36: 0.018738507696830286,10,numOfBedrooms
+Feature 32: 0.01709615823829692,11,avgSchoolRating
+Feature 22: 0.014948401670024702,12,numOfWaterfrontFeatures
+Feature 30: 0.012874467765338082,13,numOfHighSchools
+Feature 37: 0.012336468302490633,14,numOfStories
+Feature 33: 0.011912675456784283,15,avgSchoolSize
+Feature 29: 0.010830075216193169,16,numOfMiddleSchools
+Feature 4: 0.010792103426561738,17,garageSpaces
+Feature 11: 0.010739282495482417,18,parkingSpaces
+Feature 10: 0.010658055142295998,19,hasView
+Feature 16: 0.010096458571251488,20,numOfPhotos
+Feature 34: 0.008881357769857823,21,MedianStudentsPerTeacher
+Feature 38: 0.00824693064009845,22,city_del valle
+Feature 53: 0.005757600567094656,23,homeType_Townhouse
+Feature 46: 0.005070064238619876,24,homeType_Condo
+Feature 6: 0.0030542724614762264,25,hasCooling
+Feature 8: 0.002288548718936456,26,hasHeating
+Feature 28: 0.002103756008626878,27,numOfElementarySchools
+Feature 23: 0.0016780997319094215,28,numOfWindowFeatures
+Feature 39: 0.0015649567898669448,29,city_driftwood
+Feature 49: 0.0015633733636442493,30,homeType_Multiple Occupancy
+Feature 54: 0.001515355700318921,31,homeType_Vacant Land
+Feature 15: 0.0012829398945089388,32,latest_saleyear
+Feature 43: 0.001066184071880094,33,city_pflugerville
+Feature 52: 0.0007701679097099845,34,homeType_Single Family
+Feature 24: 0.0005135494313770805,35,numOfCommunityFeatures
+Feature 51: 0.00047194442617111144,36,homeType_Residential
+Feature 47: 0.0004156864103548763,37,homeType_Mobile / Manufactured
+Feature 40: 0.0002166077095492658,38,city_dripping springs
+Feature 50: 0.0,39,homeType_Other
+Feature 45: 0.0,40,city_west lake hills
+Feature 44: 0.0,41,city_road
+Feature 48: -1.8142610331162156e-05,42,homeType_MultiFamily
+Feature 41: -4.361563223858056e-05,43,city_manchaca
+Feature 42: -4.9619044046034236e-05,44,city_manor
+Feature 25: -0.0003821806236428804,45,lotSizeSqFt
+Feature 27: -0.0005300819205705353,46,numOfPrimarySchools
+Feature 19: -0.0006552098240658055,47,numOfParkingFeatures
+Feature 13: -0.001136373681532621,48,numPriceChanges
+Feature 21: -0.0019491236880948449,49,numOfSecurityFeatures
+Feature 17: -0.002107095898089628,50,numOfAccessibilityFeatures
+Feature 20: -0.0027611419670130143,51,numOfPatioAndPorchFeatures
+Feature 18: -0.00394735106683688,52,numOfAppliances
+Feature 7: -0.005779117520443355,53,hasGarage
+Feature 14: -0.0121678998580112,54,latest_salemonth
