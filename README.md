@@ -80,3 +80,5 @@ Overall, I would expect a higher accuracy score from the model, perhaps closer t
 
 As the next step, we will explore other available regressor models (possibly Neural networks and KNN regressor) in an attempt to identify one with a higher accuracy score. For those other regressor models we will look to optimize hyperparameters where relevant.
 
+![test1](https://github.com/nsysoeva/housing_listings/assets/152663360/f802526a-0d79-48bf-b43a-00b8fc74a70b)
+
